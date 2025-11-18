@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخطة الإعلانية الرسمية – CMCC SA</title>
+    <!-- تحميل Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- تحميل خط Cairo من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* تطبيق خط Cairo على جميع عناصر الصفحة */
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0d1117; /* خلفية داكنة جداً */
+            color: #e6edf3; /* نص فاتح */
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        /* تصميم خاص للعلامة المائية العائمة */
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw; /* عرض العلامة المائية */
+            max-width: 600px;
+            height: 80vh; /* ارتفاع العلامة المائية */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.05; /* شفافية عالية */
+            z-index: 1; /* أسفل المحتوى */
+            pointer-events: auto; /* لتكون قابلة للضغط */
+            transition: opacity 0.3s;
+        }
+        .watermark:hover {
+            opacity: 0.1;
+        }
+        /* تلوين الشعار في الأسفل بألوان داكنة لتناسب الخلفية */
+        .footer-logo {
+            filter: grayscale(100%) brightness(150%);
+            opacity: 0.5;
+            transition: opacity 0.3s;
+        }
+        .footer-logo:hover {
+            opacity: 0.8;
+        }
+        /* نمط الفواصل لخطوط التنصيص */
+        .separator {
+            border-top: 2px dashed #374151; /* خط متقطع داكن */
+            margin: 2rem 0;
+        }
+        /* نمط لتمييز الأقسام الرئيسية */
+        .section-title {
+            @apply text-3xl font-extrabold text-indigo-400 mb-6 border-b border-indigo-700 pb-2;
+        }
+        /* نمط للنقاط الفرعية */
+        .sub-title {
+            @apply text-xl font-bold text-gray-300 mb-3 mt-4;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- العلامة المائية العائمة (Watermark) -->
+    <a href="https://richline.sa/" target="_blank" class="watermark rounded-full">
+        <img src="https://i.ibb.co/tw7d79Vm/file.jpg" alt="شعار Richline Agency علامة مائية" class="w-full h-full object-contain rounded-full">
+    </a>
+    
+    <div class="relative z-10 p-4 md:p-12 max-w-7xl mx-auto">
+        
+        <!-- القسم العلوي والغلاف -->
+        <header class="text-center py-16 md:py-24 bg-gray-800 rounded-2xl shadow-2xl mb-16 border border-gray-700">
+            <div class="max-w-xs mx-auto mb-8 p-4 bg-gray-900 rounded-full shadow-lg">
+                 <!-- الشعار -->
+                <a href="https://richline.sa/" target="_blank" class="block hover:opacity-80 transition duration-200">
+                    <img src="https://i.ibb.co/tw7d79Vm/file.jpg" onerror="this.onerror=null;this.src='https://placehold.co/150x150/161b22/e6edf3?text=Richline+Logo';" alt="شعار Richline Agency" class="w-full h-auto rounded-full">
+                </a>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-black text-indigo-400 mb-4 tracking-wider">
+                الخطة الإعلانية الرسمية – CMCC SA
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
+                خدمات أفلام حماية السيارات والعناية بالسيارات
+            </p>
+        </header>
+
+        <!-- قسم الخطة التفصيلية -->
+        <section class="mb-20 bg-gray-900 p-8 rounded-xl shadow-2xl border border-gray-700">
+            
+            <!-- 1. الهدف العام للحملة -->
+            <h2 class="section-title">
+                1. الهدف العام للحملة
+            </h2>
+            <ul class="list-disc pr-8 text-gray-400 space-y-2">
+                <li>تعزيز الوعي بعلامة <strong class="text-white">CMCC SA</strong> كواحدة من أفضل وجهات أفلام حماية السيارات (PPF) وخدمات العناية والتلميع داخل المملكة العربية السعودية.</li>
+                <li>زيادة عدد الحجوزات والاستفسارات الخاصة بخدمات حماية الطلاء والعناية الخارجية والداخلية.</li>
+                <li>بناء صورة ذهنية قوية للعلامة باعتبارها مركزًا متخصصًا يقدم جودة عالية وضمانًا موثوقًا.</li>
+            </ul>
+
+            <div class="separator"></div>
+
+            <!-- 2. الجمهور المستهدف -->
+            <h2 class="section-title">
+                2. الجمهور المستهدف
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="sub-title">من هم عملاؤنا؟</h3>
+                    <ul class="list-disc pr-8 text-gray-400 space-y-1">
+                        <li>مالكو السيارات المهتمون بالحفاظ على مظهر سياراتهم.</li>
+                        <li>عشّاق السيارات والمهتمون بالتفاصيل الجمالية والحماية.</li>
+                        <li>سكان المدن الرئيسية داخل المملكة.</li>
+                        <li>شرائح تبحث عن الجودة، الاحترافية، والنتائج الموثوقة.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="sub-title">اهتمامات الجمهور</h3>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="bg-gray-800 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-900">حماية السيارات</span>
+                        <span class="bg-gray-800 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-900">العناية بالسيارات</span>
+                        <span class="bg-gray-800 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-900">التلميع</span>
+                        <span class="bg-gray-800 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-900">أفلام الحماية PPF</span>
+                        <span class="bg-gray-800 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-900">العزل الحراري</span>
+                        <span class="bg-gray-800 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-900">مراكز خدمة السيارات</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <!-- 3. الرسالة الإعلانية (Messaging) -->
+            <h2 class="section-title">
+                3. الرسالة الإعلانية (Messaging)
+            </h2>
+            <p class="text-gray-400 mb-4">تركز رسائل CMCC SA على النقاط التالية:</p>
+            <ul class="list-disc pr-8 text-gray-400 mb-6 grid grid-cols-1 md:grid-cols-2 gap-2">
+                <li>حماية السيارة من الخدوش والعوامل الخارجية.</li>
+                <li>الحفاظ على مظهر الطلاء ولمعانه الأصلي لأطول فترة.</li>
+                <li>جودة المواد المستخدمة واعتمادها من شركات عالمية.</li>
+                <li>احترافية الفنيين وضمان الخدمة.</li>
+                <li>سهولة الحجز وسرعة التنفيذ.</li>
+            </ul>
+
+            <div class="bg-gray-800 p-4 rounded-lg border-r-4 border-indigo-500">
+                <h3 class="text-lg font-bold text-white mb-2">أمثلة لرسائل رسمية جاهزة:</h3>
+                <p class="text-gray-400 italic">"احمِ سيارتك بأفضل تقنيات أفلام الحماية."</p>
+                <p class="text-gray-400 italic mt-2">"حماية تدوم… وجودة تُرى من النظرة الأولى."</p>
+                <p class="text-gray-400 italic mt-2">"CMCC SA — وجهتك لحماية وعناية سيارتك باحترافية."</p>
+            </div>
+
+            <div class="separator"></div>
+
+            <!-- 4. أنواع المحتوى المستخدمة في الحملة -->
+            <h2 class="section-title">
+                4. أنواع المحتوى المستخدمة
+            </h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="sub-title text-indigo-300">أولاً: محتوى مرئي (فيديوهات قصيرة)</h3>
+                    <ul class="list-circle pr-8 text-gray-400 text-sm">
+                        <li>عرض خطوات تركيب PPF بشكل احترافي.</li>
+                        <li>فيديوهات “قبل / بعد” لنتائج العناية الخارجية والداخلية.</li>
+                        <li>مقاطع سريعة لعمليات التلميع وإزالة الخدوش.</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="sub-title text-indigo-300">ثانيًا: صور احترافية</h3>
+                    <ul class="list-circle pr-8 text-gray-400 text-sm">
+                        <li>صور لسيارات بعد تنفيذ الخدمة بمظهر لامع وواضح.</li>
+                        <li>صور تُبرز جودة الفيلم الحامي وشفافيته.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="sub-title text-indigo-300">ثالثًا: Stories توضيحية</h3>
+                    <ul class="list-circle pr-8 text-gray-400 text-sm">
+                        <li>عروض يومية أو أسبوعية.</li>
+                        <li>وقت تنفيذ الخدمة.</li>
+                        <li>لقطات مباشرة من داخل المركز.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="sub-title text-indigo-300">رابعًا: محتوى تعليمي</h3>
+                    <ul class="list-circle pr-8 text-gray-400 text-sm">
+                        <li>“ما هو PPF ولماذا تحتاجه سيارتك؟”</li>
+                        <li>“كيف تحافظ على سيارتك بعد تركيب الحماية؟”</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <!-- 5. استراتيجية الاستهداف الإعلاني -->
+            <h2 class="section-title">
+                5. استراتيجية الاستهداف الإعلاني
+            </h2>
+            
+            <div class="space-y-4">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold text-white">🚩 المرحلة الأولى – Awareness (التعريف بالعلامة)</h3>
+                    <p class="text-gray-400 text-sm mt-1">استهداف الجمهور العام داخل المدن الرئيسية باستخدام فيديوهات وصور احترافية لإبراز الجودة.</p>
+                </div>
+
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold text-white">👀 المرحلة الثانية – Consideration (الاهتمام)</h3>
+                    <p class="text-gray-400 text-sm mt-1">إعادة استهداف الأشخاص الذين شاهدوا المحتوى أو تفاعلوا مع الصفحة، مع تقديم محتوى تعليمي وضمانات.</p>
+                </div>
+
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold text-white">💰 المرحلة الثالثة – Conversion (الحجوزات الفعلية)</h3>
+                    <p class="text-gray-400 text-sm mt-1">تقديم عروض محدودة واستخدام CTA مباشر مثل: "احجز الآن"، "اطلب عرض سعر"، "تواصل معنا واتساب".</p>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <!-- 6. الميزانية وتوزيعها -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-extrabold text-center mb-8 text-green-400">توزيع الميزانية</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    
+                    <div class="bg-gray-800 p-6 rounded-xl border border-green-600 shadow-xl hover:bg-gray-750 transition">
+                        <h3 class="text-xl font-bold mb-3 text-green-400">الحملات الأساسية (Instagram & FB)</h3>
+                        <p class="text-5xl font-black text-white mb-2">60%</p>
+                        <p class="text-sm text-gray-400">للوصول والتفاعل والزيارات</p>
+                    </div>
+    
+                    <div class="bg-gray-800 p-6 rounded-xl border border-green-600 shadow-xl hover:bg-gray-750 transition">
+                        <h3 class="text-xl font-bold mb-3 text-green-400">حملات الفيديو القصير</h3>
+                        <p class="text-5xl font-black text-white mb-2">30%</p>
+                        <p class="text-sm text-gray-400">لتعزيز الوعي بالعلامة التجارية</p>
+                    </div>
+    
+                    <div class="bg-gray-800 p-6 rounded-xl border border-green-600 shadow-xl hover:bg-gray-750 transition">
+                        <h3 class="text-xl font-bold mb-3 text-green-400">إعادة الاستهداف</h3>
+                        <p class="text-5xl font-black text-white mb-2">10%</p>
+                        <p class="text-sm text-gray-400">لاستكمال التحويل وزيادة الحجوزات</p>
+                    </div>
+    
+                </div>
+                <div class="mt-6 text-center bg-gray-800 p-4 rounded-lg border border-gray-700">
+                    <h4 class="text-white font-bold mb-2">مراحل إدارة الحملة:</h4>
+                    <p class="text-gray-400">1. اختبار المحتوى &nbsp; → &nbsp; 2. تحسين الأداء &nbsp; → &nbsp; 3. التوسّع واستهداف الجمهور الأكثر تجاوبًا</p>
+                </div>
+            </section>
+
+            <!-- 7. مؤشرات قياس الأداء (KPIs) -->
+            <h2 class="section-title">
+                7. مؤشرات قياس الأداء (KPIs)
+            </h2>
+            <ul class="list-disc pr-8 text-gray-400 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <li>عدد الاستفسارات عبر الواتساب.</li>
+                <li>تكلفة الحصول على عميل محتمل (CPL).</li>
+                <li>حجم الحجوزات الناتجة من الإعلانات.</li>
+                <li>نسبة مشاهدة الفيديوهات.</li>
+                <li>معدل التحويل للحجوزات المباشرة.</li>
+            </ul>
+
+            <div class="separator"></div>
+
+            <!-- 8. الجدول الزمني لتنفيذ الحملة -->
+            <h2 class="section-title">
+                8. الجدول الزمني
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-right text-gray-400 border-collapse">
+                    <thead>
+                        <tr class="bg-gray-800 text-indigo-400">
+                            <th class="p-4 border-b border-gray-700 w-1/4">الفترة</th>
+                            <th class="p-4 border-b border-gray-700">المهمة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800 transition">
+                            <td class="p-4 font-bold text-white">الأسبوع 1</td>
+                            <td class="p-4">إطلاق الحملة التعريفية + فيديوهات قصيرة وتعريف بالعلامة</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800 transition">
+                            <td class="p-4 font-bold text-white">الأسبوع 2–3</td>
+                            <td class="p-4">تحسين الاستهداف + محتوى تعليمي + ردود فورية عبر الواتساب</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800 transition">
+                            <td class="p-4 font-bold text-white">الأسبوع 4–5</td>
+                            <td class="p-4">إطلاق عروض محدودة + تعزيز الجمهور الفعّال</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800 transition">
+                            <td class="p-4 font-bold text-white">الأسبوع 6–8</td>
+                            <td class="p-4">حملة إعادة استهداف + محتوى قبل/بعد قوي</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800 transition">
+                            <td class="p-4 font-bold text-white">بعد 8 أسابيع</td>
+                            <td class="p-4">تحليل شامل وتحديد أفضل أنواع الخدمات من حيث الطلب</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="separator"></div>
+
+            <!-- 9. عناصر القوة -->
+            <h2 class="section-title">
+                9. عناصر القوة (USP)
+            </h2>
+            <ul class="list-disc pr-8 text-gray-400 text-lg space-y-2">
+                <li><span class="text-green-400 font-bold">✓</span> ضمان على جودة المواد والخدمة.</li>
+                <li><span class="text-green-400 font-bold">✓</span> فريق محترف ومدرّب.</li>
+                <li><span class="text-green-400 font-bold">✓</span> استخدام مواد عالية الجودة ومعتمدة.</li>
+                <li><span class="text-green-400 font-bold">✓</span> نتائج واضحة تظهر بشكل مباشر بعد الخدمة.</li>
+                <li><span class="text-green-400 font-bold">✓</span> تجربة عميل مميزة وسريعة.</li>
+            </ul>
+
+        </section>
+
+        <!-- معلومات الاتصال -->
+        <section class="text-center py-12 border-t border-gray-700 mt-16">
+            <h2 class="text-3xl font-bold text-gray-300 mb-4">للاستفسارات والمناقشة</h2>
+            <p class="text-lg text-gray-400">تواصل معنا لمراجعة هذه الخطة والبدء في تنفيذ حملة CMCC SA.</p>
+        </section>
+
+    </div>
+
+    <!-- تذييل الصفحة (Footer) -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8 px-4 text-center">
+        <div class="max-w-6xl mx-auto">
+            <!-- الشعار في أسفل التقرير -->
+            <a href="https://richline.sa/" target="_blank" class="block w-24 mx-auto mb-4 hover:opacity-80 transition duration-200">
+                <img src="https://i.ibb.co/tw7d79Vm/file.jpg" onerror="this.onerror=null;this.src='https://placehold.co/100x100/161b22/e6edf3?text=Richline+Logo';" alt="شعار Richline Agency" class="footer-logo w-full h-auto rounded-full">
+            </a>
+            
+            <p class="text-sm text-gray-500 font-medium">
+                جميع الحقوق محفوظة لدى <strong class="text-indigo-400">richline agency</strong> &copy; <script>document.write(new Date().getFullYear())</script>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
